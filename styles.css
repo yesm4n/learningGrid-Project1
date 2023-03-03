@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #332c39;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 2rem;
+}
+
+img {
+  width: 420px;
+}
+
+/* NAVBAR  */
+
+.navbar {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 2em;
+  margin-bottom: 2em;
+  background-color: #f0eeed;
+}
+
+.list-items {
+  display: inline;
+  list-style-type: none;
+}
+
+.links {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px;
+  color: #332c39;
+}
+
+.brand {
+  font-weight: 600;
+}
+
+.links:hover {
+  color: rgb(157, 156, 156);
+}
+
+/* CONTAINER CONTENT  */
+
+.container {
+  padding: 3%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-one {
+  text-align: right;
+  /* border: solid black 2px; */
+}
+
+.container-two {
+  /* border: solid black 2px; */
+}
+
+.lorem-ipsum {
+  width: 80%;
+}
+
+/* CIRCLE CIRCLE-DIVS */
+
+.circle-main {
+  display: grid;
+  justify-content: left;
+  gap: 1em;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.circle {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.circle:hover {
+  background-color: #332c39;
+  color: #f0eeed;
+}
+
+.circle-one {
+  background-color: #f0eeed;
+}
+
+.circle-two {
+  background-color: #609ea2;
+}
+
+.circle-three {
+  background-color: #c92c6d;
+  color: #fff;
+}
+
+/* FOOTER  */
+
+.footer {
+  margin-top: 1em;
+  padding: 2em;
+  background-color: #f0eeed;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 900px) {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .links {
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .circle-main {
+    justify-content: center;
+    gap: 1em;
+    grid-template-columns: 100px 100px 100px;
+  }
+  .lorem-ipsum {
+    text-align: center;
+    width: unset;
+    padding: 2% 15%;
+  }
+}
